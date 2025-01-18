@@ -39,7 +39,7 @@ if build_scatter: # al hacer clic en el botón
     st.write('Boxplot de los cilindros de los vehículos en venta')
             
     # crear un histograma
-    fig = px.scatter(car_data, x="odometer", y="price")
+    fig = px.box(car_data, y="cylinders")
         
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
